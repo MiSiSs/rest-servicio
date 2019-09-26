@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="rest-proyect">
+	<class>co.com.kalettre.modelo.Paciente</class>
+	<class>co.com.kalettre.modelo.Medico</class>
+	<class>co.com.kalettre.modelo.Usuario</class>
+	<class>co.com.kalettre.modelo.Rol</class>
+	<class>co.com.kalettre.modelo.UsuarioRol</class>
+	<class>co.com.kalettre.modelo.OauthAccessToken</class>
+	<class>co.com.kalettre.modelo.OauthAccessTokenId</class>
+	<class>co.com.kalettre.modelo.Especialidad</class>
+	<class>co.com.kalettre.modelo.Consulta</class>
+	<class>co.com.kalettre.modelo.DetalleConsulta</class>
+	<class>co.com.kalettre.modelo.Menu</class>
+	<class>co.com.kalettre.modelo.MenuRol</class>
+	<class>co.com.kalettre.modelo.MenuRolId</class>
+	<class>co.com.kalettre.modelo.UsuarioRolId</class>
+	<class>co.com.kalettre.modelo.Signos</class>
+	<class>co.com.kalettre.modelo.ResetToken</class>
+	<class>co.com.kalettre.modelo.Examen</class>
+	
+		<properties>			
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/mediappfs"/>
+			<property name="javax.persistence.jdbc.user" value="postgres"/>
+			<property name="javax.persistence.jdbc.password" value="postgres"/>
+			<property name="hibernate.show_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
